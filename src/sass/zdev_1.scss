@@ -7,6 +7,7 @@
     }
 
     .button-transparent{display: inline-block;text-decoration: none;text-transform: uppercase;color:#ffffff;font-weight: 700;font-size: 15px;height: 39px;max-width: 195px;width: 100%;text-align: center;border:1px solid #fff;border-radius: 3px;line-height: 37px;transition:all 300ms ease;
+        &.transparent-green{border-color:#4c9a65;color:#4c9a65;}
         &:hover{color:#276f44;background-color: #fff;}
     }
 
@@ -126,6 +127,23 @@
 
 /* block-3 */
 
-    .block-3{}
+    .block-3{position: relative;z-index: 1;margin-top: -200px;margin-bottom: 50px;
+
+        .block-3-wrap{max-width: 705px;width: 100%;
+            .block-3-img{margin-bottom: 10px;}
+            .block-3-text{color:#404040;font-size: 14px;line-height: 1.5;margin-bottom: 20px;
+                p{margin:0 0 50px 0;
+                    &:last-child{margin: 0;}
+                }
+            }
+        }
+
+    }
 
 /* /block-3 */
+
+/* block-4 */
+
+
+
+/* /block-4 */
