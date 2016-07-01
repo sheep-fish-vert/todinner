@@ -13,12 +13,15 @@ $.scrollbarWidth=function(){var a,b,c;if(c===undefined){a=$('<div style="width:5
 function scrollUp(block,targetBlock) {
 
     $(block).click(function(e){
+
+        e.preventDefault();
+
         var target = $(targetBlock).offset().top;
 
         $(scroller).stop().animate({scrollTop:target},800);
+
         return false;
 
-        e.preventDefault();
     });
 }
 
@@ -160,6 +163,8 @@ function headeButer(menuMobile,toggleMenu){
 $(document).ready(function() {
     //oneHeightItems();
     $('.footer_placeholder').height($('.footer').outerHeight());
+
+    scrollUp('.header-worktime a', '.block-4');
 
     //goTo();
     //animationBlock($('.setion-animate'));

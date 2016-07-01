@@ -162,9 +162,12 @@
 
 /* footer */
 
-    .footer{text-align: center;
-        a{display: inline-block;
-            span{display: block;}
+    .footer{text-align: center;padding-bottom: 60px;
+        a{display: inline-block;text-decoration: none;
+            span{display: block;
+                &.footer-img{margin-bottom: 10px;}
+                &.footer-text{font-size: 24px;color:#276f44;}
+            }
         }
     }
 
