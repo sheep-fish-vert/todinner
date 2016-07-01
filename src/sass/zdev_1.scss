@@ -1,0 +1,94 @@
+/* button */
+
+    .button{height: 41px;max-width:190px;width: 100%;box-sizing:content-box;display: flex;justify-content: center;align-items: center;cursor: pointer;text-decoration: none;color:#9a550b;background: #f9e01f;border-width:0 0 5px 0;border-style:solid;border-color:#d8ac12;border-radius:5px;font-weight:500;font-size:13px;text-transform: uppercase;position:relative;top:0;background: -moz-linear-gradient(top, #f9e01f 0%, #f9b915 100%);background: -webkit-linear-gradient(top, #f9e01f 0%,#f9b915 100%);background: linear-gradient(to bottom, #f9e01f 0%,#f9b915 100%);filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9e01f', endColorstr='#f9b915',GradientType=0 );transition:all 150ms ease;
+        img{margin-right: 10px;}
+        span{margin-bottom: -2px;}
+        &:hover{top:5px;border-width:0 0 0 0;margin-bottom: 5px;}
+    }
+
+/* /button */
+
+/* header */
+
+    .header{position: absolute;width: 100%;padding:26px 0 22px 0;
+        .header-wrap{display: flex;justify-content: space-between;align-items: center;}
+
+        .header-logo{
+            a{display: flex;align-items: center;justify-content: space-between;text-decoration: none;
+                span{font-size: 24px;color:#276f44;margin-left: 10px;}
+            }
+        }
+
+        .header-content{display: flex;justify-content: flex-end;align-items: center;
+
+            .header-contacts{text-align: right;margin-right: 15px;
+
+                .header-tel{font-size: 18px;color:#343f46;margin-bottom: 5px;
+                    span{font-weight: 700;}
+                }
+
+                .header-worktime{font-size: 13px;color:#343f46;
+                    a{position: relative;color:#343f46;text-decoration: none;
+                        span{position: relative;
+                            &:after{content:'';display: block;position: absolute;left:0;top:100%;height: 1px;width: 100%;background-color:#343f46;transition:all 300ms ease;}
+                        }
+                        &:hover{
+                            span{
+                                &:after{width: 0;}
+                            }
+                        }
+                    }
+                }
+
+            }
+
+            .header-button{position: relative;
+
+                .button{width: 190px;}
+
+                .header-popup{position: absolute;top:calc(100% + 22px);right:0;width: 410px;padding:30px 23px 20px;border-radius:5px;display: none;
+                    .header-close-popup{position: absolute;right: 23px;top:30px;width: 25px;height: 25px;cursor:pointer;transition:all 300ms ease;
+                        &:before, &:after{content:'';display: block;position: absolute;width: 28px;height: 1px;background-color: #243d44;transform-origin:50% 50%;left:calc(50% - 14px);top:calc(50% - 1px);transition:all 300ms ease;}
+                        &:before{transform:rotate(45deg);}
+                        &:after{transform:rotate(-45deg);}
+                        &:hover{transform:rotate(360deg) translateZ(0px);
+                            &:before, &:after{background-color: #fff;}
+                        }
+                    }
+                }
+
+            }
+
+        }
+
+    }
+
+/* /header */
+
+/* contact-form */
+
+    .contact-form{border-bottom:5px solid #1e5e41;background: #59c07f;background: -moz-linear-gradient(top, #59c07f 0%, #25845a 100%);background: -webkit-linear-gradient(top, #59c07f 0%,#25845a 100%);background: linear-gradient(to bottom, #59c07f 0%,#25845a 100%);filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#59c07f', endColorstr='#25845a',GradientType=0 );
+
+        .contact-title{font-size: 24px;color:#fff;font-weight: 700;text-transform: uppercase;margin-bottom: 36px;}
+
+        .form_row-wrap{margin-bottom: 24px;
+            .form_row{margin-bottom: 17px;
+                &:last-child{margin-bottom: 0;}
+                .form_input{
+                    input{width: 100%;border-style:solid;border-width: 3px 0 0 0;border-color:#b9e5f0;border-radius: 5px;height: 44px;padding:0 10px 0 46px;background-repeat: no-repeat;transition:border-color 300ms ease;
+                        &.man-icon{background-image:url(../images/man-icon-gray.png);background-position: 15px 13px;}
+                        &.tel-icon{background-image:url(../images/tel-icon-gray.png);background-position: 17px 10px;}
+                        &.email-icon{background-image: url(../images/mail-icon-gray.png);background-position: 18px 15px;}
+                        &.error{border-color:rgba(255, 0, 0, .6);}
+                    }
+                }
+            }
+        }
+
+        .form_submit{display: flex;justify-content: center;
+            .button{font-size: 14px;max-width: 120px;}
+        }
+
+    }
+
+/* /contact-form */
