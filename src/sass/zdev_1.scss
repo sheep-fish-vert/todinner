@@ -21,7 +21,7 @@
         .header-wrap{display: flex;justify-content: space-between;align-items: center;}
 
         .header-logo{
-            a{display: flex;align-items: center;justify-content: space-between;text-decoration: none;
+            .header-logo-wrap{display: flex;align-items: center;justify-content: space-between;text-decoration: none;
                 h1{font-size: 24px;color:#276f44;margin-left: 10px;font-weight: 400;margin: 0;}
             }
         }
@@ -114,7 +114,7 @@
 
 /* block-2 */
 
-    .block-2{overflow: hidden;margin:-480px 0 0px;background-image:url(../images/block-2-bg.jpg);background-repeat: no-repeat;background-position: center -10px;position:relative;z-index:2;-webkit-clip-path:polygon(0%  0%, 100% 40%, 100% 100%, 0% 60%);clip-path: polygon(0%  0%, 100% 40%, 100% 100%, 0% 60%);-webkit-clip-path: url("#clip-shape");clip-path: url("#clip-shape");
+    .block-2{overflow: hidden;margin:-480px 0 0px;background-image:url(../images/block-2-bg.jpg);background-repeat: no-repeat;background-position: center -70px;position:relative;z-index:2;-webkit-clip-path:polygon(0%  0%, 100% 40%, 100% 100%, 0% 60%);clip-path: polygon(0%  0%, 100% 40%, 100% 100%, 0% 60%);-webkit-clip-path: url("#clip-shape");clip-path: url("#clip-shape");
 
         .block-2-wrap{padding:340px 0 360px;max-width: 650px;width: 100%;
             .block-2-img{margin-bottom: 10px;}
@@ -163,7 +163,7 @@
 /* footer */
 
     .footer{text-align: center;padding-bottom: 60px;
-        a{display: inline-block;text-decoration: none;
+        .footer-logo-wrap{display: inline-block;text-decoration: none;
             span{display: block;
                 &.footer-img{margin-bottom: 10px;}
                 &.footer-text{font-size: 24px;color:#276f44;}
@@ -172,3 +172,15 @@
     }
 
 /* /footer */
+
+/* fancyboxes */
+
+    .fancybox-overlay-fixed{background-color: rgba(0, 0, 0, .75);}
+
+    .call-popup{text-align: center;
+        .fancybox-skin{background: #59c07f;background: -moz-linear-gradient(top, #59c07f 0%, #25845a 100%);background: -webkit-linear-gradient(top, #59c07f 0%,#25845a 100%);background: linear-gradient(to bottom, #59c07f 0%,#25845a 100%);filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#59c07f', endColorstr='#25845a',GradientType=0 );}
+        .call-title{font-size: 24px;font-weight: 500;margin-bottom: 10px;padding-top: 20px;color:#fff;text-transform: uppercase;}
+        .call-subtitle{font-size: 20px;color:#fff;padding:0 10px;}
+    }
+
+/* /fancyboxes */
